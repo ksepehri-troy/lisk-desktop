@@ -1,0 +1,43 @@
+@import '../../../app/mixins.css';
+
+.container {
+  display: flex;
+  flex: 1;
+}
+
+.prefix {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+  color: var(--color-blue-gray);
+}
+
+.content {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.textContainer {
+  display: flex;
+}
+
+.text {
+  @mixin contentLargest semi-bold;
+
+  color: var(--color-maastricht-blue);
+
+}
+
+.postfix {
+  @mixin contentNormal;
+  margin-left: 10px;
+}
+
+.captionContainer {
+  @mixin contentNormal;
+
+  color: var(--color-slate-gray);
+}
+
